@@ -23,9 +23,7 @@ var TestLocation = (function () {
 
   _createClass(TestLocation, [{
     key: 'needsDOM',
-    get: function () {
-      return false;
-    }
+    value: false
   }, {
     key: '_updateHistoryLength',
     value: function _updateHistoryLength() {
@@ -90,5 +88,7 @@ var TestLocation = (function () {
 
   return TestLocation;
 })();
+
+TestLocation.needsDOM = false;
 
 module.exports = TestLocation;
